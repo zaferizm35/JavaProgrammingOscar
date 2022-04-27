@@ -3,7 +3,6 @@ public class TV {
     private int volumeLevel = 0;
     boolean on = false;
     private String brand = "undefined";
-
     public TV() {
         System.out.println("Creating TV object using no args-constructor");
     }
@@ -16,6 +15,11 @@ public class TV {
     }
 
     public void setChannel(int channel) {
+        if ( !on || channel <= 0 || channel > 120) {
+            System.out.println("ERROR: TV is either OFF or invalid Channel");
+            return;
+        }
+
         this.channel = channel;
     }
 
@@ -24,7 +28,10 @@ public class TV {
     }
 
     public void setVolumeLevel(int volumeLevel) {
-        this.volumeLevel = volumeLevel;
+        if (!on||volumeLevel<0||volumeLevel>=7){
+            System.out.println("ERROR: TV is either OFF or invalid Volume level");
+            return;
+        }this.volumeLevel = volumeLevel;
     }
 
     public String getBrand() {
@@ -33,6 +40,40 @@ public class TV {
 
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public void channelUp() {
+        channel++;
+    }
+
+    public void channelDown() {
+        channel--;
+    }
+
+    public void volumeUp() {
+        volumeLevel++;
+    }
+
+    public void volumeDown() {
+        volumeLevel--;
+    }
+
+    public void isOn(){
+        System.out.println(on);
+    }
+
+    public void turnOn(){
+        if (on == true) {
+            System.out.println("TV is already ON");
+            on=true;
+        }
+    }
+
+    public void turnOff(){
+        if (on == false) {
+            System.out.println("TV is already ON");
+            on=false;
+        }
     }
 }
     /*Write a custom class TV that has 4 instance variables:
