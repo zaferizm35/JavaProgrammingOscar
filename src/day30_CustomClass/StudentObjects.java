@@ -2,7 +2,7 @@ package day30_CustomClass;
 
 import java.util.ArrayList;
 
-public class StudentObjects {
+public class  StudentObjects {
 
     public static void main(String[] args) {
 
