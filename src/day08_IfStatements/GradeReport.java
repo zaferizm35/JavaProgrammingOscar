@@ -16,6 +16,7 @@ public class GradeReport {
 
         int score = 85; // 0 ~ 100
 
+
         boolean a = score >= 90 && score <= 100; //false
         boolean b = score >= 80 && score <= 89; //true
       //  boolean b = score >= 80 && !a; // if score is A, but score is greater than 80

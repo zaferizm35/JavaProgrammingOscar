@@ -40,7 +40,11 @@ public abstract class Car {
     }
 
     public void setColor(String color) {
+        if(color.length()<3){
+            System.out.println("invalid color"+brand);
+        }
         this.color = color;
+
     }
 
     public void setPrice(double price) {
@@ -56,7 +60,7 @@ public abstract class Car {
         System.out.println("Press the brake");
     }
 
-    public abstract void start();
+     abstract void start();
 
 
     @Override

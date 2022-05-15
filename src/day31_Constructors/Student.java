@@ -8,6 +8,7 @@ public class Student {
     public char grade;
     public int id;
 
+
     public Student(String name, int age, char gender, char grade, int id) {
         this.name = name;
         this.age = age;

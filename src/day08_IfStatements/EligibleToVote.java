@@ -13,6 +13,8 @@ public class EligibleToVote {
         // Eligible
         if(isEligible){ // True
             System.out.println("Eligible");
+        } else {
+            System.out.println("not elligible");
         }
 
         //Not Eligible

@@ -11,7 +11,7 @@ public class Checked_vs_Unchecked {
         int a = 10;
         int b = 0;
 
-         // System.out.println(  a / b  );
+        // System.out.println(  a / b  );
         //System.out.println("Wooden Spoon");
 
         char[] characters = {'A', 'B', 'C'};

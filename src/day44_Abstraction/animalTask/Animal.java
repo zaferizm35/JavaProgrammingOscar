@@ -13,7 +13,7 @@ class Test{
 }
 */
 
-public abstract class Animal {
+public abstract class Animal  {
 
     private String name;
     private final String breed;
@@ -84,10 +84,10 @@ public abstract class Animal {
     }
 
     public final void drink(){
-        System.out.println(name+" is drinking");
+        System.out.println(name+" is drinking water");
     }
 
-    public  abstract void eat();
+    public abstract void eat();
 
 
     @Override
